@@ -16,14 +16,14 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <div class="d-flex w-100 justify-content-between">
+       <div class="d-flex w-100 justify-content-between"> <!-- w-100 makes 100% width of parent, justify-content-between child elements to the edges -->
 
-        <!-- Instagram image on the left -->
+        <!-- Child 1 Instagram image on the left -->
         <div>
           <i class="fa-brands fa-instagram"></i><span class="ms-1 fs-5"><strong>Instagram</strong></span>
         </div>
 
-        <!-- modal button on the far right -->
+        <!-- Child 2 modal button on the far right -->
         <div class="d-flex align-right justify-content-end">
           <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create a
             New Post</button>
@@ -61,7 +61,7 @@
             </div>
           </div>
 
-          <!--Dropdown button  -->
+          <!-- Child 3 Dropdown button  -->
           <div class="btn-group">
             <button type="button" class="ms-2 btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
               aria-expanded="false">
@@ -124,14 +124,14 @@
 
   <!-- Nav tabs -->
   <div class="container-fluid">
-    <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+     <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist"> <!-- nav-pill instead of nav-button to appear disappear content when clicked-->
       <li class="nav-item" role="presentation">
         <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
-          aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+           aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a> <!-- #home will be the id when clicked-->
       </li>
       <li class="nav-item" role="presentation">
         <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
-          aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+          aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a> <!-- #profile will be the id when clicked-->
       </li>
       <!-- <li class="nav-item" role="presentation">
         <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button"
@@ -152,10 +152,10 @@
 
         <div class="row">
           <!-- first row -->
-          <div class="col-4 p-1">
+          <div class="col-4 p-1">  
             <img
               src="https://images.pexels.com/photos/33045/lion-wild-africa-african.jpg?auto=compress&cs=tinysrgb&w=600"
-              class="img-fluid w-100" style="height: 30vw; object-fit: cover;">
+              class="img-fluid w-100" style="height: 30vw; object-fit: cover;">   <!-- img-fluid so it scales according to screen making it responsive, w-100 100% img width of the container "4", 30vw height of the image to 30% of the viewport width (respondive to screen), object-fit:cover; image fill the container, cropping image if necesarry not stretching-->
           </div>
           <div class="col-4 p-1">
             <img
@@ -213,7 +213,7 @@
       <!-- vertical -->
       <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
 
-        <div class="card col-6 mx-auto mb-4">
+         <div class="card col-6 mx-auto mb-4"> <!-- mx-auto centers card horizontally by adding left and right margins, mb-4 margin-botton with size of 4 -->
           <div class="card-header d-flex justify-content-between">
             <span>The Lion King!</span><span>08/26</span>
           </div>
